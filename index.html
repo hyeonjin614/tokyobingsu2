@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 도쿄 빙수 </title>
+
+    <link href="css/index.css" rel="stylesheet"/> 
+    <link href="lib/XEIcon-2.2.0/xeicon.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+
+
+<script src="lib/jquery-3.6.0.min.js"> </script> 
+
+
+</head>
+<body>
+
+    <script>   
+        $(document).ready(function(){
+
+                // 햄버거 아이콘을 눌렸을 때
+        $('.m_header_wrap .xi-bars').click(function(){
+            $('.m_header_wrap .sidebar_menu').addClass('on');
+
+                // 슬라이드 메뉴 x 보이게
+            $('.m_header_wrap .xi-close').css('display','block');
+            });
+
+                // x를 누르면 메뉴 숨기기
+        $('.m_header_wrap .xi-close').click(function(){
+            $('.m_header_wrap .sidebar_menu').removeClass('on');
+                
+                // x 가리기
+            $('.m_header_wrap .xi-close').css('display','none');
+
+            });
+
+
+       
+        }); //
+    
+    </script>
+
+
+    <!-- 모바일 헤더 -->
+
+    <div class="m_header_wrap">
+        <!-- 햄버거 -->
+        <i class="xi-bars"></i>
+        <!-- x  -->
+        <i class="xi-close"></i>
+   
+        <div class="sidebar_menu">
+            <ul class="menu_wrap">
+                <li><a href="#">브랜드 소개</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">매장찾기</a></li>
+                <li><a href="#">창업 안내</a></li>
+                <li><a href="#">뉴스</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </div> <!--.m_header_wrap end-->
+   
+       
+    <header>
+        <div>
+            <h1>
+                <img src="img/logo.png" alt="로고 빨강"/>
+            </h1>
+
+            <nav>
+                <ul>
+                    <li><a href="#">브랜드 소개</a></li>
+                    <li><a href="#">메뉴</a></li>
+                    <li><a href="#">매장찾기</a></li>
+                    <li><a href="#">창업 안내</a></li>
+                    <li><a href="#">뉴스</a></li>
+                </ul>
+            </nav>
+        </div>
+
+       
+    </header>
+
+
+    <div class="main_visual">
+        <div>
+            <img src="img/main_fresh.gif" alt="빙수 gif"/>
+        </div>
+    </div><!--.main_visual end-->
+
+    
+      <!--.매장 사진-->
+    <div class="cont01">
+        <div>
+            <img src="img/bingsu_shop02.png" alt="가게사진"/>
+        </div>
+    </div><!--.cont01 end-->
+
+
+    <div class="cont02_title">
+        <!-- 메뉴 타이틀 -->
+        <img src="img/bingsu_menu_title.png" alt="메뉴 타이틀">
+    </div><!--.cont02_title end-->
+
+
+
+    <div class="cont03">
+        
+        <div class="cont03_wrap">
+            <div class="cont03_wrap_in">
+                <!-- 빙수 -->
+                <div class="menu01">
+                    <img src="img/menu-1-bingsu.png" alt="배경"/>
+                    <img src="img/menu01.png" alt="빙수메뉴"/>
+                   
+                    <p>빙수</p>
+                </div>
+
+                <!-- 컵빙수 -->
+                <div class="menu02">
+                    <img src="img/menu-2-bingsu.png" alt="배경"/>
+                    <img src="img/menu02.png" alt="컵빙수"/>
+                    
+                    <p>컵빙수</p>
+                </div>
+        
+                <!-- 디저트 -->
+                <div class="menu03">
+                    <img src="img/menu-3-dessert.png" alt="배경"/>
+                    <img src="img/menu03.png" alt="당고"/>
+                   
+                    <p>디저트</p>
+                </div>
+
+                <!-- 음료 -->
+                <div class="menu04">
+                    <img src="img/menu-4-drink.png" alt="배경">
+                    <img src="img/menu04.png" alt="커피">
+                    <p>음료</p>
+                </div>
+            </div> <!--.cont03_wrap_in end-->
+
+        </div><!--.cont03_wrap end-->
+
+    </div><!--.cont03_menu end-->
+
+    <div class="map_title">
+        <img src="img/map_title.png" alt="매장 위치 타이틀"/>
+
+    </div><!--map_title end-->
+
+    <div class="cont04">
+
+            <div class="cont04_in">
+                <img src="img/red-door.jpg" alt="빨간 문">
+                <img src="img/red-flag.jpg" alt="빨간깃발">
+                <img src="img/bingsu-flag.jpg" alt="빙수깃발">
+    
+                <img src="img/twinkle-gray.jpg" alt="회색">
+                <img src="img/twinkle-green.jpg" alt="녹색">
+                <img src="img/twinkle-orange.jpg" alt="오렌지">
+                <img src="img/twinkle-sky.jpg" alt="하늘">
+                <img src="img/twinkle-yello.jpg" alt="노랑">
+            </div> <!--.cont04_in end-->
+       
+        
+    </div><!--.cont04 end-->
+
+
+    <div class="d_map">
+    <!-- 도쿄빙수 지도 -->
+        <div class="g_map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d809713.8632553834!2d126.34477236562498!3d37.55636480000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9925fa0b5271%3A0x1eb7264765d686f5!2z64-E7L-E67mZ7IiYIOunneybkOuzuOygkA!5e0!3m2!1sko!2skr!4v1648278987392!5m2!1sko!2skr" 
+            width="600" height="430" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </div> <!-- .g_map end -->
+
+
+    <div class="cont05_title">
+        <img src="img/bingsu_sns.png" alt="도쿄빙수_sns"> 
+    </div> <!--.cont05_title end-->
+
+
+
+    <div class="cont05">
+        <!-- sns 사진 -->
+
+        <div class="cont05_wrap">
+                <div class="cont05_in">
+
+                    <div>
+                        <p><img src="img/sns-1.jpg" alt="sns1"/></p>
+                        <span><a href="#"><i class="xi-instagram"></i></span></a>
+                    </div>
+
+                    <div>
+                        <p><img src="img/sns-2.jpg" alt="sns1"/></p>
+                        <span><a href="#"><i class="xi-instagram"></i></span></a>
+                    </div>
+
+                    <div>
+                        <p><img src="img/sns-3.jpg" alt="sns1"/></p>
+                        <span><a href="#"><i class="xi-instagram"></i></span></a>
+                    </div>
+
+                    <div>
+                        <p><img src="img/sns-4.jpg" alt="sns1"/></p>
+                        <span><a href="#"><i class="xi-instagram"></i></span></a>
+                    </div>
+
+                    <div>
+                        <p><img src="img/sns-5.jpg" alt="sns1"/></p>
+                        <span><a href="#"><i class="xi-instagram"></i></span></a>
+                    </div>
+
+                    <div>
+                        <p><img src="img/sns-6.jpg" alt="sns1"/></p>
+                        <span><a href="#"><i class="xi-instagram"></i></span></a>
+                    </div>
+
+                    <div>
+                        <p><img src="img/sns-7.jpg" alt="sns1"/></p>
+                        <span><a href="#"><i class="xi-instagram"></i></span></a>
+                    </div>
+
+                    <div>
+                        <p><img src="img/sns-8.jpg" alt="sns1"/></p>
+                       <span><a href="#"><i class="xi-instagram"></i></span></a>
+                    </div>
+
+                </div><!--.cont05_in end-->
+        </div> <!--.cont05_wrap end -->
+
+    </div> <!--.cont05 end-->
+
+    <footer>
+ 
+        <div class="footer_wrap">
+
+            <div class="footer_in01">
+                <img src="img/logo-white.png" alt="로고 화이트"/>
+                <ul>
+                    <li>㈜에스에스에이푸드ㅣ사업자번호: 286-81-00637ㅣ서울시 마포구 포은로 8길 9 1층</li>
+                    <li>대표 : 김성론ㅣ대표번호 : 1811-8957ㅣFAX : 0504-135-5692</li>
+                    <li>ssafoodkorea@gmail.com</li>
+                    <li>COPYRIGHT  ©  2021 (주)에스에스에이푸드  ALL RIGHTS RESERVED.</li>
+            </div><!--.footer_in01-->
+
+
+            <div class="sns">
+                <ul>
+                    <li>
+                        <a href="#"><i class="xi-facebook-official"></i> </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="xi-instagram"></i></a>
+                    </li>
+                </ul>
+
+                <p>이용약관 ㅣ 개인정보처리방침</p>
+            </div><!--.insta end-->
+
+        </div> <!--.footer_wrap end-->
+
+    </footer>
+
+
+        
+
+    
+</body>
+</html>
