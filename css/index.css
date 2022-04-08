@@ -1,0 +1,1766 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HaenamFont';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/HaenamFont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+*{margin: 0;padding: 0;}
+li {
+    list-style: none;}
+
+a { 
+    text-decoration: none;
+    color: #333;
+    display: block;}
+
+
+.xi-bars {
+    display: none; }
+
+
+
+/* 반응형 헤더 */
+
+.m_header_wrap {
+    display: none;
+    }
+/* 헤더 로고 */
+
+header { 
+    
+    width: 100% ;
+    /* 있어야 헤더가 깔끔하게 자리잡힘 */
+    margin: 0 auto;
+    text-align: center;
+    height: 90px;
+    line-height: 90px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 99;
+
+    /*  항상 헤더에게 포지션 */
+
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+   
+    
+}
+
+header h1 {
+    /* 로고 이미지 위치 */
+    float: left; 
+}
+
+header h1 img {
+    width: 130px;
+    margin-top: 10px;
+}
+
+header div {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header nav {
+    display: inline-block;
+    /* float: right; */
+}
+
+header nav ul li {
+    /* 카테고리 */
+    width: 130px;
+    display: inline-block;
+
+    font-size: 15px;
+    font-family: 'S-CoreDream-3Light';
+ 
+}
+
+
+
+/* 메인비주얼 빙수 */
+
+.main_visual {
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    text-align: center;
+    /* background-color: aqua; */
+  
+}
+
+.main_visual div {
+    width: 1440px;
+    
+    padding-top: 160px; /* 헤더와의 간격 */
+    margin: 0 auto;
+    
+}
+
+.main_visual img {
+    width: 90%;
+  
+}
+
+/* @@@ cont01 */
+
+ .cont01 {
+     width: 100%;
+     text-align: center;
+     margin-bottom: 120px; /* 하단 메뉴와의 여백 */
+ }
+
+.cont01 div {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.cont01 div img {
+    /* 매장사진 */
+    width: 100%;
+}
+
+/*  */
+
+.cont02_title {
+    /* 빙수 메뉴 */
+    width: 100%;
+    height: 130px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+.cont02_title img {
+    /* 빙수메뉴 타이틀 이미지 */
+    width: 430px;
+   
+}
+
+
+/* @@@@@@@@@@@@@@@@@@@ */
+
+
+.cont03 {
+    /* 메뉴란 */
+    width: 100%;
+    /* height: 800px; */
+    text-align: center;
+    margin: 0 auto;
+    /* background-color: lightcoral; */
+
+}
+
+.cont03 .cont03_wrap {
+    /* 메뉴전체 랩 */
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cont03 .cont03_wrap_in {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    margin: 0 auto;
+    text-align: center;
+   
+
+}
+
+.cont03 .cont03_wrap_in div {
+    width: 50%;
+    margin-top: 20px;
+    
+}
+
+.cont03 .cont03_wrap_in img:first-of-type {
+    /* 메뉴 배경 이미지 */
+    width: 470px;
+}
+
+/* 메뉴 이미지 포지션값 */
+
+ /* 빙수메뉴 빙수 위치 */
+.cont03 .cont03_wrap .menu01 {
+    position: relative; }
+.cont03 .cont03_wrap .menu01 img:last-of-type {
+    /* 빙수 이미지 */
+    position: absolute;
+    width: 280px;
+    top: 14%;
+    left: 36%;
+}
+
+.cont03 .cont03_wrap .menu01 p {
+    /* 빙수 글 */
+    font-size: 25px;
+    color: #fff;
+    font-weight: bold;
+
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 13%;
+    font-family: 'HaenamFont';
+}
+
+
+
+ /* 컵빙수 빙수 위치 */
+.cont03 .cont03_wrap .menu02 {
+    position: relative; }
+.cont03 .cont03_wrap .menu02 img:last-of-type {
+    /* 컵빙수 이미지 */
+    position: absolute;
+    width: 260px;
+    top: 12%;
+    left: 39%;
+}
+
+.cont03 .cont03_wrap .menu02 p {
+    /* 컵빙수 글 */
+    font-size: 25px;
+    color: #fff;
+    font-weight: bold;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10%;
+    font-family: 'HaenamFont';
+}
+
+
+
+ /* 디저트 당고 빙수 위치 */
+.cont03 .cont03_wrap .menu03 {
+    position: relative; }
+.cont03 .cont03_wrap .menu03 img:last-of-type {
+    /* 당고 이미지 */
+    position: absolute;
+    width: 280px;
+    top: 14%;
+    left: 36%;
+}
+.cont03 .cont03_wrap .menu03 p {
+    /* 디저트 글 */
+    font-size: 25px;
+    color: #fff;
+    font-weight: bold;
+
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 10%;
+    font-family: 'HaenamFont';
+}
+
+
+
+ /* 커피 위치 */
+.cont03 .cont03_wrap .menu04 {
+    position: relative; }
+.cont03 .cont03_wrap .menu04 img:last-of-type {
+    /* 커피 이미지 */
+    position: absolute;
+    width: 190px;
+    top: 14%;
+    left: 45%;
+}
+.cont03 .cont03_wrap .menu04 p {
+    /* 음료 글 */
+
+    font-size: 25px;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 12%;
+    font-family: 'HaenamFont';
+}
+
+    /* 맵 타이틀 */
+    
+    .map_title {
+        margin-top: 140px;
+        width: 100%;
+        text-align: center;
+       
+    }
+
+    .map_title img {
+        width: 300px;
+    }
+
+
+    /* 매장 위치 */
+    .cont04 {
+        width: 100%;
+        height: 680px;
+        margin: 0 auto;
+        /* background-color: red; */
+    }
+
+    .cont04 .cont04_in {
+        /* 이미지 전체 박스 */
+        width: 1100px;
+        height: 700px;
+        position: relative;
+        margin: 0 auto;
+    }
+  
+
+    .cont04 .cont04_in img:first-of-type {
+        /* 빨간문 */
+        width: 30%;
+        position: absolute;
+        top: 33%;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+    .cont04 .cont04_in img:nth-of-type(2) {
+        /* 빨간깃발 */
+        position: absolute;
+        width: 130px;
+        top: 15%;
+        left: 10% ;
+
+    }
+
+    .cont04 .cont04_in img:nth-of-type(3) {
+        /* 빙수 깃발 */
+        position: absolute;
+        width: 140px;
+        right: 9%;
+        top: 43%;
+    
+    }
+
+    .cont04 .cont04_in img:nth-of-type(4) {
+        /* 회색 반짝이 */
+        position: absolute;
+        top: 60%;
+        left:10% ;
+        width: 5%;
+
+    }
+
+
+    .cont04 .cont04_in img:nth-of-type(5) {
+        /* 녹색 반짝이 */
+        position: absolute;
+        top: 10%;
+        right:27% ;
+        width: 45px;
+
+    }
+
+    .cont04 .cont04_in img:nth-of-type(6) {
+        /* 오렌지 반짝이 */
+        position: absolute;
+        top: 70%;
+        left: 23% ;
+        width: 3%;
+
+    }
+    .cont04 .cont04_in img:nth-of-type(7) {
+        /*  하늘색 반짝이 */
+        position: absolute;
+        top: 19%;
+        left: 38% ;
+        width: 5%;
+
+    }
+    .cont04 .cont04_in img:nth-of-type(8) {
+        /*  노란색 반짝이 */
+        position: absolute;
+        top: 80%;
+        right: 25% ;
+        width: 5%;
+
+        
+    }
+
+
+    .d_map {
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+    /* 도쿄빙수 sns */
+
+
+.cont05_title {
+
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    /* background-color: lightcoral; */
+
+}
+
+.cont05_title img {
+    /* 도쿄빙수_sns */
+    width: 400px;
+    margin-top: 130px;
+   
+}
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+    .cont05 {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .cont05 .cont05_wrap .cont05_in {
+        /* background-color: lightgreen; */
+        width: 930px;
+
+        margin: 42px auto;
+        max-width: 1400px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+       
+        
+    }
+    .cont05 .cont05_wrap .cont05_in div {
+        /* xi 인스타 자리 */
+        position: relative;
+        margin: 5px;
+        width: 220px;
+        height: 220px;
+        box-shadow: 2px 2px 2px 2px rgba(51, 51, 51, 0.029);
+       
+    }
+    .cont05 .cont05_wrap .cont05_in span {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .cont05 .cont05_wrap .cont05_in span a {
+        color: #fff;
+        font-size: 40px;
+        box-sizing: border-box;
+    }
+
+    .cont05 .cont05_wrap .cont05_in img {
+        transition: 0.2s ease-in;
+        width: 100%; /* div 크기 맞추기 */
+    }
+
+    /* div 호버 */
+    .cont05 .cont05_in div:first-of-type:hover img {
+        /* 1 */
+        opacity: 90%;
+
+    }
+    .cont05 .cont05_in div:first-of-type:hover img {
+        /* 1 */
+        opacity: 50%;
+        filter: brightness(60%);
+    }
+    .cont05 .cont05_in div:nth-of-type(2):hover img {
+        /* 2 */
+        opacity: 50%;
+        filter: brightness(60%);
+    }
+    .cont05 .cont05_in div:nth-of-type(3):hover img {
+        /* 3 */
+        opacity: 50%;
+        filter: brightness(60%);
+    }
+    .cont05 .cont05_in div:nth-of-type(4):hover img {
+        /* 4 */
+        opacity: 50%;
+        filter: brightness(60%);
+    }
+    .cont05 .cont05_in div:nth-of-type(5):hover img {
+        /* 5 */
+        opacity: 50%;
+        filter: brightness(60%);
+    }
+    .cont05 .cont05_in div:nth-of-type(6):hover img {
+        /* 6 */
+        opacity: 50%;
+        filter: brightness(60%);
+    }
+    .cont05 .cont05_in div:nth-of-type(7):hover img {
+        /* 7 */
+        opacity: 50%;
+        filter: brightness(60%);
+    }
+   
+    .cont05 .cont05_in div:last-of-type:hover img {
+        /* 8 */
+        opacity: 50%;
+        filter: brightness(60%);
+    }
+
+    .cont05 .cont05_wrap .cont05_in span {
+        /* 인스타 숨기기 */
+        display: none;
+                
+    } 
+
+    .cont05 .cont05_in div:hover span {
+        display: block;
+    }
+
+    /* @@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
+    footer {
+     width: 100%;
+
+     background: url('../img/footer.jpg') center center / cover no-repeat;
+     position: relative;
+     margin-top: 80px;
+    }
+
+    footer .footer_wrap {
+        width: 1300px;
+        height: 240px;
+        /* background-color: black; */
+        margin: 0 auto;
+        position: relative;
+    }
+
+    footer .footer_in01 {
+        width: 60%;
+        float: left;
+    }
+
+    footer .footer_in01 img:first-of-type {
+        /* 흰 로고 */
+        width: 130px;
+        padding-top: 20px;
+    }    
+
+    footer .footer_wrap ul  {
+        margin-top: 20px; /*로고와의 여백 */
+    } 
+
+    footer .footer_wrap ul li {
+       
+        /* width: 600px; */
+        color: #fff;
+        line-height: 28px;
+    } 
+  
+    footer .footer_in01 li:last-of-type {
+        color: #d3d3d3;
+    }
+
+    footer .footer_wrap .sns {
+        /* background-color: aqua; */
+        width: 20%;
+        float: right;
+   
+    }
+
+    footer .footer_wrap .sns ul li a {
+   
+        font-size: 45px;
+        float: right;
+        color: #fff; 
+    }
+
+    footer .footer_wrap .sns ul li a:first-child {
+        /* sns 아이콘 간격 */
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+
+    footer .sns p {
+        display: inline-block;
+        color: #fff;
+      
+        position: absolute;
+        bottom:20%;
+        right: 0;
+        color: #d3d3d3;
+    
+    }
+
+ 
+
+    @media screen and (max-width:1024px) {
+
+
+
+        /* 햄버거 메뉴 */
+        .xi-bars {
+            display: block;
+            font-size: 40px;
+            z-index: 999;
+        }
+
+
+        .xi-close {
+            display: block;
+            font-size: 38px;
+          
+        }
+
+
+        .m_header_wrap {
+            display: block;
+            width: 100%;
+            position: relative;
+            z-index: 999;
+            
+        }
+
+        .m_header_wrap .xi-bars {
+            /* 햄버거 */
+            position: fixed;
+            top: 2.5%;
+            right: 4%;
+            /* z-index: 9999; */
+            color:#d82e22;
+         
+        }
+
+        .m_header_wrap .xi-close {
+            /* x */
+            position: fixed;
+            top: 2.5%;
+            right: 4%;
+            z-index: 9999;
+            
+            display: none;
+            color:#d82e22;
+         
+        }
+
+        .m_header_wrap .sidebar_menu {
+            width: 70%;
+            height: 100%;
+            background-color: rgb(252, 252, 252);
+            /* opacity: 85%; */
+            position: fixed;
+
+            box-sizing: border-box;
+            top: 0;
+            right: 0;
+            z-index: 999;
+
+            right: -70%;
+            
+
+        }
+
+        .m_header_wrap .sidebar_menu.on {
+
+            right: 0;
+        }
+
+        .m_header_wrap .menu_wrap {
+            margin-top: 100px;
+        }
+
+   
+        .m_header_wrap .menu_wrap li a {
+            color:#333;
+            margin-left: 50px;
+            font-size: 22px;
+            line-height: 70px;
+
+            font-family: 'S-CoreDream-3Light';
+         
+        }
+
+
+        /* header */
+
+        header div {
+            /* 헤더 양쪽 여백 */
+            width: calc(100% - 80px); 
+        }
+        header nav {display: none;}
+        
+        header .xi-bars {
+                /* 햄버거 xi */
+                display: block;
+                float: right;
+                line-height: 80px;
+                font-size: 40px;
+                color: #333;
+                }
+
+        header .xi-search {
+                /* 검색 xi */
+         
+            float: right;
+            line-height: 80px;
+            font-size: 38px;
+            color: #333;
+            margin-right: 20px;
+            
+            }
+
+        .xi-bars span {
+            display: none;
+            }
+        .xi-search span {
+            display: none;
+            }
+
+        .main_visual {
+            margin-top: 70px;
+            height: 700px;
+            }
+
+        .main_visual div {
+                width: 1000px;
+            }
+
+        .cont03 {
+                width: 900px;
+            }
+        .cont03 .cont03_wrap {
+            width: 850px;
+            }
+
+        .cont03 .cont03_wrap_in img:first-of-type {
+            /* 메뉴배경 */
+            width: 400px;
+            }
+
+        .cont03 .cont03_wrap .menu01 img:last-of-type {
+            /* 빙수 사진 */
+            width: 230px;
+            top: 17%;
+            left: 37%;
+            }
+
+        .cont03 .cont03_wrap .menu01 p {
+            /* 빙수 글 */
+            top: 50%;
+            left: 12%;
+        }
+
+        .cont03 .cont03_wrap .menu02 img:last-of-type {
+            /* 컵빙수 사진 */
+            width: 210px;
+            top: 13%;
+            left: 40%;
+            }
+
+        .cont03 .cont03_wrap .menu02 p {
+            /* 컵빙수 글 */
+            top: 50%;
+            left: 9%;
+        }
+
+        .cont03 .cont03_wrap .menu03 img:last-of-type {
+            /* 디저트 당고 사진 */
+            width: 230px;
+            top: 15%;
+            left: 37%;
+            }
+
+        .cont03 .cont03_wrap .menu03 p {
+            /* 디저트 글 */
+            top: 50%;
+            left: 9%;
+        }
+
+        .cont03 .cont03_wrap .menu04 img:last-of-type {
+            /* 음료 커피 사진 */
+            width: 150px;
+            top: 18%;
+            left: 46%;
+            }
+
+        .cont03 .cont03_wrap .menu04 p {
+            /* 음료 글 */
+            top: 50%;
+            left: 12%;
+        }
+
+        .cont04 .cont04_in {
+            /* 매장위치 일러스트 */
+            width: 910px;
+         
+            }
+
+        footer .footer_wrap {
+                width: 900px;
+                height: 280px;
+            }
+
+        
+
+    } /*1024 end */
+
+    @media screen and (max-width:860px) {
+
+      
+        /* 메뉴 */
+      
+
+        .main_visual {
+            height: 650px;
+            margin-top: 50px;
+
+        }
+        .main_visual div {
+            width: 830px;
+           
+        }
+
+        .cont01 {
+            margin-bottom: 90px;
+        }
+        
+        .cont02_title {
+            height: 95px;
+        }
+
+        .cont03 {
+                width: 830px;
+            }
+
+        .cont03 .cont03_wrap {
+            width: 800px;
+            }
+
+        .cont03 .cont03_wrap_in img:first-of-type {
+            /* 메뉴배경 */
+            width: 380px;
+            }
+
+        .cont03 .cont03_wrap .menu01 img:last-of-type {
+            /* 빙수 사진 */
+            width: 220px;
+            top: 17%;
+            left: 36%;
+            }
+
+        .cont03 .cont03_wrap .menu01 p {
+            /* 빙수 글 */
+            top: 50%;
+            left: 11%;
+        }
+
+        .cont03 .cont03_wrap .menu02 img:last-of-type {
+            /* 컵빙수 사진 */
+            width: 210px;
+            top: 13%;
+            left: 39%;
+            }
+
+        .cont03 .cont03_wrap .menu02 p {
+            /* 컵빙수 글 */
+            top: 50%;
+            left: 8%;
+        }
+
+        .cont03 .cont03_wrap .menu03 img:last-of-type {
+            /* 디저트 당고 사진 */
+            width: 230px;
+            top: 15%;
+            left: 37%;
+            }
+
+        .cont03 .cont03_wrap .menu03 p {
+            /* 디저트 글 */
+            top: 50%;
+            left: 8%;
+        }
+
+        .cont03 .cont03_wrap .menu04 img:last-of-type {
+            /* 음료 커피 사진 */
+            width: 150px;
+            top: 18%;
+            left: 45%;
+            }
+
+        .cont03 .cont03_wrap .menu04 p {
+            /* 음료 글 */
+            top: 50%;
+            left: 11%;
+        }
+
+        .cont04 {
+            height: 630px;
+        }
+
+        .cont04 .cont04_in {
+            /* 매장위치 일러스트 */
+            width: 810px;
+
+            }
+
+        .map_title {
+            margin-top: 100px;
+        }
+
+        .cont05 {
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .cont05_title img {
+            margin-top: 100px;
+        }
+
+        .cont05 .cont05_wrap {
+                width:700px ;
+                margin: 0 auto;
+                overflow-x: scroll;
+            }
+
+        .cont05 .cont05_wrap .cont05_in { 
+
+            width: 2600px;
+            max-width: 2600px;
+            flex-wrap: nowrap;
+            overflow-x: scroll;
+           
+            }
+
+        .cont05 .cont05_wrap .cont05_in div {
+            width: 80%;
+            height: auto;
+            margin-right: 15px;
+          
+        }
+
+         /* @@@ footer  */
+
+        footer .footer_wrap {
+                width: 780px;
+            }
+
+
+        } /*860 end */
+
+    @media screen and (max-width:640px) {
+
+        .main_visual {
+            width: 600px;
+            height: 460px;
+            margin-top: 50px;
+
+        }
+        .main_visual div {
+            width: 600px;
+           
+        }
+
+        .cont01 div {
+            width: 600px;
+        }
+
+        .cont02_title img {
+            /* 도쿄빙수_메뉴 타이틀 */
+            width: 350px;
+        }
+
+
+        .cont03 {
+            width: 600px;
+        }
+
+        .cont03 .cont03_wrap {
+            width: 600px;
+          
+        }
+
+        .cont03 .cont03_wrap_in img:first-of-type {
+            /* 메뉴배경 */
+            width: 280px; }
+
+        .cont03 .cont03_wrap .menu01 img:last-of-type {
+            /* 빙수 사진 */
+            width: 170px;
+            top: 17%;
+            left: 36%;
+            }
+
+        .cont03 .cont03_wrap .menu01 p {
+            /* 빙수 글 */
+            top: 50%;
+            left: 12%;
+            font-size: 20px;
+        }
+
+
+        .cont03 .cont03_wrap .menu02 img:last-of-type {
+            /* 컵빙수 사진 */
+            width: 150px;
+            top: 13%;
+            left: 39%;
+            }
+
+        .cont03 .cont03_wrap .menu02 p {
+            /* 컵빙수 글 */
+            top: 50%;
+            left: 8%;
+            font-size: 20px;
+        }
+
+        .cont03 .cont03_wrap .menu03 img:last-of-type {
+            /* 디저트 당고 사진 */
+            width: 170px;
+            top: 15%;
+            left: 37%;
+            }
+
+        .cont03 .cont03_wrap .menu03 p {
+            /* 디저트 글 */
+            top: 50%;
+            left: 8%;
+            font-size: 20px;
+        }
+
+        .cont03 .cont03_wrap .menu04 img:last-of-type {
+            /* 음료 커피 사진 */
+            width: 110px;
+            top: 18%;
+            left: 45%;
+            }
+
+        .cont03 .cont03_wrap .menu04 p {
+            /* 음료 글 */
+            top: 50%;
+            left: 11%;
+            font-size: 20px;
+        }
+
+        .map_title img {
+            /* 매장위치 타이틀 */
+            width: 240px;   
+        }
+
+        .cont04 .cont04_in img:nth-of-type(5) {
+            top: 3%;
+        }
+
+        .cont04 .cont04_in img:nth-of-type(7) {
+            top: 14%;
+        }
+
+        .cont04 .cont04_in img:nth-of-type(2) {
+            width: 100px;
+            top:7%;
+        }
+
+        .cont04 .cont04_in img:nth-of-type(3) {
+            top: 33%;
+        }
+
+        .cont04 .cont04_in img:first-of-type {
+            top: 23%;
+        }
+
+        .cont04 .cont04_in img:nth-of-type(8) {
+            top: 70%;
+        }
+
+        .cont04 {
+            width: 100%;
+            height: 430px; /* 빨간 문 일러스트, 지도 여백 */
+        }
+      
+      
+        .cont04 .cont04_in {
+            width: 620px;
+            height: 500px;
+        }
+
+        .cont05 {
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .cont05_title img {
+            /* 도쿄빙수_sns 타이틀 */
+            width: 320px;
+            margin-top: 75px;
+        }
+
+       
+
+        .cont05 .cont05_wrap {
+            width: 590px ;
+            margin: 0 auto;
+            overflow-x: scroll;
+        }
+
+        .cont05 .cont05_wrap .cont05_in {
+            /* display: flex; */
+            width: 2600px;
+            max-width: 2400px;
+            flex-wrap: nowrap;
+            overflow-x: scroll;
+        }
+
+        .cont05 .cont05_wrap .cont05_in div {
+            width: 80%;
+            height: auto;
+            margin-right: 15px;
+          
+        }
+
+
+
+      /* @@@ footer  */
+
+      footer {
+          margin-top: 10px;
+      }
+        footer .footer_wrap {
+            width: 580px;
+        }
+
+        footer .footer_wrap ul li {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        footer .footer_wrap p {
+            font-size: 14px;
+            bottom: 18%;
+        }
+
+        footer .footer_wrap .sns {
+            width: 30%;
+            margin-top: 35px;
+        }
+
+
+    } /* 640 end */
+
+
+    @media screen and (max-width:500px) {
+
+
+        .main_visual {
+            width: 100%;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .main_visual img {
+            width: 100%;
+       
+        }
+        .main_visual div {
+            width: 490px;
+            padding-top: 120px;
+        }
+
+        .cont01 {
+            width: 100%;
+            overflow: hidden;
+        }
+
+    
+
+        .cont01 div {
+            width: 100%;
+        }
+
+        .cont01 div img {
+            width: 98%;
+        }
+        .cont02_title {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .cont02_title img {
+            /* 도쿄빙수 메뉴 */
+            width: 300px;
+            
+        }
+        .cont03 {
+            width: 480px;
+            width: 100%;
+        }
+
+        .cont03 .cont03_wrap {
+            width: 480px;
+
+        }
+
+        .cont03 .cont03_wrap_in img:first-of-type {
+            /* 메뉴상자 */
+            width: 230px;
+        }
+
+        .cont03 .cont03_wrap .menu01 img:last-of-type {
+            /* 빙수 */
+            width: 130px;
+        }
+
+        .cont03 .cont03_wrap .menu01 p {
+            /* 빙수글 */
+            left: 10%;
+            font-size: 18px;
+        }
+
+        .cont03 .cont03_wrap .menu02 img:last-of-type {
+            /* 컵빙수 */
+            width: 130px;
+        }
+
+        .cont03 .cont03_wrap .menu02 p {
+            /* 컵빙수 글 */
+            font-size: 18px;
+            left: 6%;
+        }
+
+        .cont03 .cont03_wrap .menu03 img:last-of-type {
+            /* 디저트 당고 */
+
+            width: 140px;
+        }
+
+        .cont03 .cont03_wrap .menu03 p {
+            /* 컵빙수 글 */
+            font-size: 18px;
+            left: 6%;
+        }
+
+        .cont03 .cont03_wrap .menu04 img:last-of-type {
+            /* 커피 */
+           width: 94px;
+           top: 16%;
+        }
+
+        .cont03 .cont03_wrap .menu04 p {
+            /* 음료 글 */
+            font-size: 18px;
+            left: 10%;
+        }
+
+        .map_title {
+            margin-top: 40px;
+        }
+
+        .d_map {
+            width: 300px;
+        }
+        .g_map {
+            width: 300px;
+            display: none;
+        }
+
+
+        .cont04 .cont04_in {
+            width: 460px;
+            margin: 0 auto;
+        }
+        .cont04 .cont04_in img:nth-of-type(2) {
+            /* 붉은 깃발 */
+            width: 80px;
+            left: 6%;
+            top: 16%;
+        }
+
+        .cont04 .cont04_in img:nth-of-type(3) {
+         /* 파란 깃발 */
+         width: 100px;
+         right: 5%;
+        }
+
+        .cont04 .cont04_in img:first-of-type {
+            /* 빨간문 */
+            width: 44%;
+            top: 25%;
+        }
+
+        .cont04 .cont04_in img:nth-of-type(4) {
+            /* 회색 반짝이 */
+            width: 7%;
+            top: 50%;
+        }
+
+        .cont04 .cont04_in img:nth-of-type(8) {
+            /* 문아래 노란 반짝이 */
+            top: 75%;
+            right: 14%;
+      
+        }
+
+        .cont04 .cont04_in img:nth-of-type(6) {
+            /* 문아래 주황 반짝이 */
+            width: 10%;
+            left: 15%;
+            top: 55%;
+
+        }
+
+        .cont05_title img {
+            /* sns 타이블 */
+                width: 300px;
+                margin-top: 40px;
+        }
+
+        footer {
+            /* width: 500px; */
+            height: 300px;
+        }
+  
+        footer .footer_wrap {
+            width: 450px;
+        }
+     
+        footer .footer_wrap ul li{
+            margin-bottom: 7px;
+            line-height: 18px;
+        }
+
+        footer .footer_in01 li:last-of-type {
+            padding-top: 10px;
+        }
+        footer .footer_wrap p {
+            bottom: 11%;
+        }
+     
+
+    } /*뷰포트 500end */
+
+    @media screen and (max-width:414px) {
+
+        .main_visual {
+            width: 100%;
+            height: 350px;
+        }
+        .main_visual div {
+            width: 380px;
+        }
+
+        .cont01 {
+            margin-bottom: 50px;
+        }
+
+        .cont03 .cont03_wrap {
+            width: 100%;
+        }
+
+
+        .cont02_title img {
+            /* 도쿄빙수메뉴 타이틀 */
+            width: 260px;
+        }
+
+        .cont03 {
+            width: 400px;
+        }
+
+        .map_title {
+            width: 100%;
+        }
+
+        
+        .cont03 .cont03_wrap_in {
+            width: 100%;
+        }
+        .cont03 .cont03_wrap_in img:first-of-type {
+            /* 메뉴배경 */
+
+                width: 190px;
+
+        }
+
+        .cont02_title {
+            height: 65px;
+        }
+
+
+
+        .cont03 .cont03_wrap .menu01 img:last-of-type {
+            /* 빙수 */
+            width: 120px;
+        }
+
+        .cont03 .cont03_wrap .menu01 p {
+            /* 빙수글 */
+            left: 10%;
+            font-size: 18px;
+        }
+
+        .cont03 .cont03_wrap .menu02 img:last-of-type {
+            /* 컵빙수 */
+            width: 110px;
+        }
+
+        .cont03 .cont03_wrap .menu02 p {
+            /* 컵빙수 글 */
+            font-size: 18px;
+            left: 6%;
+        }
+
+        .cont03 .cont03_wrap .menu03 img:last-of-type {
+            /* 디저트 당고 */
+
+            width: 110px;
+        }
+
+        .cont03 .cont03_wrap .menu03 p {
+            /* 컵빙수 글 */
+            font-size: 18px;
+            left: 6%;
+        }
+
+        .cont03 .cont03_wrap .menu04 img:last-of-type {
+            /* 커피 */
+           width: 80px;
+           top: 16%;
+        }
+
+        .cont03 .cont03_wrap .menu04 p {
+            /* 음료 글 */
+            font-size: 18px;
+            left: 10%;
+        }
+
+        .map_title img {
+            /* 매장위치 타이틀 */
+
+                width: 200px;
+        }
+
+        .cont04 .cont04_in img:nth-of-type(5) {
+            /* 연두색 반짝이 */
+            width: 30px;
+        }
+
+        .cont04 .cont04_in img:nth-of-type(3) {
+            /* 빙수깃발 */
+            width: 80px;
+        }
+
+        .cont04 {
+        width: 100%;
+            height: 350px;
+        }
+
+        .cont04 .cont04_in {
+            width: 100%;
+        }
+
+        .cont05 {
+            width: 100%;
+            height: 350px;
+            margin-top: -30px;
+        }
+        .cont05 .cont05_wrap {
+            width: 350px;
+        }
+
+        .cont05_title img {
+            /* 도쿄빙수 sns */
+                width: 260px;
+        }
+
+        
+
+
+        footer {
+            width: 100%;
+        }
+        footer .footer_wrap {
+            width: 350px;
+        }
+
+        footer .footer_wrap ul {
+  
+            width: 100%;
+         
+        }
+
+        footer .footer_wrap .sns {
+            display: inline-block;
+            margin-top: 0;
+
+
+        }
+       
+
+        footer .footer_wrap .sns ul li a { 
+            display: inline-block; 
+  
+        }
+
+        footer .footer_wrap .sns ul li {
+            font-size: 20px;
+        }
+      
+
+        footer .footer_wrap p {
+            bottom: 23%;
+        }
+
+
+        footer .footer_wrap .sns ul li a:first-child {
+            margin-top: 20px;
+            margin-left: 5px;
+        }
+
+        footer .footer_in01 {
+            width: 70%;
+        }
+
+
+        
+
+
+    } /* 뷰포트 414 end */
+
+
+    @media screen and (max-width:320px) {
+
+        .main_visual {
+            /* width: 300px; */
+            width: 100%;
+            height: 300px;
+        }
+
+        .main_visual img {
+            width: 300px;
+           
+        }
+        .main_visual div {
+            width: 300px;
+        }
+
+        header {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        header img {
+            padding-left: 50px;
+        }
+
+
+        .cont01 {
+            width: 100%;
+            /* 사진 밑 여뱍 */
+            margin-bottom: 40px;
+        }
+
+
+        .cont02_title {
+            text-align: center;
+            height: 60px;
+        }
+
+
+        .cont02_title img {
+            /* 도쿄빙수 메뉴 */
+            width: 230px;
+
+        }
+
+
+
+        .cont03 {
+            width: 100%;
+        }
+
+     
+        .cont03 .cont03_wrap {
+            width: 310px;
+
+        }
+
+        .cont03 .cont03_wrap_in div {
+            margin-top: 5px;
+        }
+
+        .cont03 .cont03_wrap_in img:first-of-type {
+            /* 메뉴상자 */
+            width: 150px;
+        }
+
+        .cont03 .cont03_wrap .menu01 img:last-of-type {
+            /* 빙수 */
+            width: 80px;
+        }
+
+        .cont03 .cont03_wrap .menu01 p {
+            /* 빙수글 */
+            left: 8%;
+            font-size: 14px;
+        }
+
+        .cont03 .cont03_wrap .menu02 img:last-of-type {
+            /* 컵빙수 */
+            width: 80px;
+        }
+
+        .cont03 .cont03_wrap .menu02 p {
+            /* 컵빙수 글 */
+            font-size: 14px;
+            left: 4%;
+        }
+
+        .cont03 .cont03_wrap .menu03 img:last-of-type {
+            /* 디저트 당고 */
+
+            width: 80px;
+        }
+
+        .cont03 .cont03_wrap .menu03 p {
+            /* 디저트 글 */
+            font-size: 14px;
+            left: 4%;
+        }
+
+        .cont03 .cont03_wrap .menu04 img:last-of-type {
+            /* 커피 */
+           width: 60px;
+           top: 16%;
+        }
+
+        .cont03 .cont03_wrap .menu04 p {
+            /* 음료 글 */
+            font-size: 15px;
+            left: 7%;
+        }
+
+        .cont04 {
+            width: 100%;
+            height: 340px;
+
+        }
+
+        .cont04 .cont04_in {
+            width: 300px
+        }
+
+        .map_title img {
+            /* 매장위치 */
+            width: 190px;
+        }
+
+        .cont04 .cont04_in img:nth-of-type(2) {
+            /* 붉은 깃발 */
+            width: 70px;
+            left: 6%;
+            top: 7%;
+        }
+        .cont04 .cont04_in img:nth-of-type(3) {
+            /* 파란 깃발 */
+            width: 100px;
+            right: 2%;
+            top: 16%;
+           }
+
+        .cont04 .cont04_in img:first-of-type {
+            /* 빨간문 */
+            width: 50%;
+            top: 40%;
+        }
+        .cont04 .cont04_in img:nth-of-type(5) {
+            /* 연두색 반짝이 */
+            width: 30px;
+        }
+
+        .cont04 .cont04_in img:nth-of-type(8) {
+            /* 노란반짝이 */
+            width: 25px;
+            top: 70%;
+        }
+
+        .cont05_title img {
+         width: 230px;
+
+        }
+
+        .cont05_title img {
+            margin-top: 80px;
+        }
+
+
+        .cont05 .cont05_wrap {
+            width: 260px;
+        }
+        .cont05 .cont05_wrap .cont05_in {
+         
+            margin-top: 20px;
+        }
+
+
+        footer {
+            width: 100%;
+            height: 370px;
+        }
+        footer .footer_wrap {
+            width: 300px;
+            height: 370px;
+        }
+
+        footer .footer_wrap ul li {
+            margin-bottom: 10px;
+        }
+
+        footer .footer_in01 {
+            width: 100%;
+            padding-top: 20px;
+        }
+        footer .footer_wrap .sns {
+            width: 100%;
+            height: 370px;
+            margin-top: 0;
+            position: absolute;
+            top: 0;
+   
+        }
+        footer .footer_in01 li:last-of-type {
+            /* 카피라이트 */
+            margin-top: 10px;
+       
+        }
+
+        footer .footer_wrap p {
+           position: absolute;
+           
+          
+        }
+
+        
+        
+    } 
+
+
